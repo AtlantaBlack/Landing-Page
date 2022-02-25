@@ -1,0 +1,177 @@
+:root {
+    --heading-text: #db4966;
+    --darkest: #fd9fb2;
+    --mid: #fdcdc5;
+    --light: #fce5cb;
+    --lightest: #fffae9;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+header, footer {
+    background-color: var(--darkest);
+    line-height: 3.5rem;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 0.25rem solid var(--heading-text);
+}
+
+header h2 {
+    display: inline;
+    padding-left: 1rem;
+    color: var(--heading-text);
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline;
+    line-height: 3.5rem;
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--lightest);
+    cursor: pointer;
+}
+
+main {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+    padding:  0 4rem;
+    text-align: center;
+}
+
+h1 {
+    color: var(--heading-text);
+    margin: 0.75rem;
+}
+
+section {
+    padding: 0.5rem;
+}
+
+/*
+main.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    flex-flow: column wrap; 
+    ^ shorthand for f-direction & f-wrap
+
+    align-items: center;
+    padding: 4rem;
+}  */
+
+/* 
+section.flex-item {
+    flex: 1;
+    justify-content: center;
+} */
+
+
+figcaption {
+    text-size: 0.75rem;
+    margin: 1rem;
+}
+
+
+figure img {
+    width: 50%;
+    height: 50%;
+}
+
+form.form-subscribe {
+    border: 4px dotted var(--mid);
+    line-height: 2rem;
+    padding: 0.8rem;
+}
+
+input[type=text] {
+    padding:10px;
+    border:0;
+    box-shadow: 0 0 15px 4px var(--mid);
+    border-radius: 0.75rem;
+    margin: 1rem;
+    width: 260px;
+    font-family: inherit;
+}
+
+button {
+    -webkit-appearance:none;
+    appearance:none;
+
+    border: 2px solid var(--heading-text);
+    width: 150px;
+    padding: 0.25rem;
+    background-color: var(--darkest);
+    color: var(--lightest);
+    font-weight: 700;
+    border-radius: 0.5rem;
+
+}
+
+button:hover {
+    border: 2px solid var(--mid);
+    background-color: var(--light);
+    color: var(--heading-text);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    border-top: 0.25rem solid var(--heading-text);
+}
+
+/* 
+form.test-one {
+    border: 5px solid red;
+    background-color: blanchedalmond;
+    display:table;
+}
+
+li.horizontal {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+
+
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+} */
